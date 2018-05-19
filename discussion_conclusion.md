@@ -1,7 +1,5 @@
 ---
-layout: page
-title: Discussion and Conclusions
-permalink: /discussion-conclusions/
+layout: default
 ---
 
 # Discussion and Conclusions
