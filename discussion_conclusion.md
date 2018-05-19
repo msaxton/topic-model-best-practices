@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Discussion and Conclusions
+# Discussion
 
 ## The Number of Topics in a Topic Model
 
