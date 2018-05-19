@@ -1,6 +1,6 @@
 # Conclusions: Recommendations for the Best Practices in Building a Topic Model
 
-## Decide on the Use Case for th Topic Model
+## Decide on the Use Case for the Topic Model
 
 Topic models can serve many purposes. In this project I have indicated three: (1) the analysis of a large corpus of documents; (2) grouping documents based on similar content; and (3) information retrieval. The task of the topic model should dictate they way the topic model is built, different parameters will make a topic model more, or less, suited for a task.
 

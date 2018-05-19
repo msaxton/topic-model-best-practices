@@ -8,7 +8,7 @@ This project builds, tests, and analyses a number of different topic models base
 0. [Project Overview](https://msaxton.github.io/topic-model-best-practices/project_overview.html)
 1. [Literature Review](https://msaxton.github.io/topic-model-best-practices/lit_review.html)
 2. [Analysis: Studying the properties of topic models with different numbers of topics](https://msaxton.github.io/topic-model-best-practices/compare_num_topics.html)
-3. [Analysis: Studying the properties of topic models with different alpha values]()
+3. [Analysis: Studying the properties of topic models with different alpha values](https://msaxton.github.io/topic-model-best-practices/compare_alphas.html)
 4. [Analysis: Comparing a regular corpus with a noun-only corpus](https://msaxton.github.io/topic-model-best-practices/compare_noun_and_regular.html)
 5. [Discussion](https://msaxton.github.io/topic-model-best-practices/discussion_conclusion.html)
 6. [Conclusions](https://msaxton.github.io/topic-model-best-practices/conclusions.html)
@@ -17,4 +17,4 @@ This project builds, tests, and analyses a number of different topic models base
 9. [References](https://msaxton.github.io/topic-model-best-practices/references.html)
 
 ## Acknowledgments
-I would like to thank Peter Organisciak Ph.D. and Krystyna Matusiak Ph.D. for their willingness to oversee and comment upon this project. I am also grateful for JSTOR labs who generously provide the dataset upon which this project is based. Many thanks also to the folks of experimentalhumanities@iliff who have inspired in me a love of coding and all things digital. Finally, a special thanks for Amelia Stubblefield who has been a constant source of encouragement through this project. 
+I would like to thank Peter Organisciak Ph.D. and Krystyna Matusiak Ph.D. for their willingness to oversee and comment upon this project. I am also grateful for JSTOR labs who generously provided the dataset upon which this project is based. Many thanks also to the folks of experimentalhumanities@iliff who have inspired in me a love of coding and all things digital. Finally, a special thanks for Amelia Stubblefield who has been a constant source of encouragement through this project. 
