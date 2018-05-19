@@ -1,7 +1,5 @@
 ---
-layout: page
-title: Literature Review
-permalink: /literature-review/
+layout: default
 ---
 
 # Literature Review
