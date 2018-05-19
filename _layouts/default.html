@@ -20,8 +20,15 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <!--<p>{{ site.description | default: site.github.project_tagline }}</p>-->
         <p><a href="{{ "/" | absolute_url }}lit_review.html"> Literature Review</a></p>
+        <p><a href="{{ "/" | absolute_url }}compare_num_topics.html"> Compare Number of Topics</a></p>
+        <p><a href="{{ "/" | absolute_url }}compare_alphas.html"> Compare Alpha Values</a></p>
+        <p><a href="{{ "/" | absolute_url }}compare_noun_and_regular.html"> Compare Noun and Regular Corpus Models</a></p>
+        <p><a href="{{ "/" | absolute_url }}discussion_conclusion.html"> Discussion and Conclusions</a></p>
+        <p><a href="{{ "/" | absolute_url }}process_corpus.html"> Appendix 1: Documentation of Corpus Preparation</a></p>
+        <p><a href="{{ "/" | absolute_url }}build_models.html"> Appendix 2: Documentation of Model Training Code</a></p>
+        <p><a href="{{ "/" | absolute_url }}references.html"> References</a></p>
 
 
         {% if site.github.is_project_page %}
