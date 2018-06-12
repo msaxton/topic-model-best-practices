@@ -34,7 +34,7 @@ Alpha values have a more significant effect on the model's ability to cluster th
 
 ### Information Retrieval
 
-`model_alpha_05` was able to achieve higher average similarity scores than the other two models in the information retrieval test. Higher scores here do not necessarily mean better results. However, to the degree that for the three information retrieval tasks each model returned articles that were in the right subject area (and often returned documents in common), it can be concluded that `model_alpha_05`'s higher average similarities scores are meaningful. A wider distribution of topics across a document will increase the similarities between documents because although a given topic will not have a very high probability score in a document, more topics will have at least low probability scores (as opposed to negligible probability scores). This means that the there is less difference between documents in reference to each topic in the model.
+`model_alpha_05` was able to achieve higher similarity scores than the other two models in the information retrieval test. Higher scores here do not necessarily mean better results. However, to the degree that for the three information retrieval tasks each model returned articles that were in the right subject area (and often returned documents in common), it can be concluded that `model_alpha_05`'s higher average similarities scores are meaningful. A wider distribution of topics across a document will increase the similarities between documents because although a given topic will not have a very high probability score in a document, more topics will have at least low probability scores (as opposed to negligible probability scores). This means that the there is less difference between documents in reference to each topic in the model.
 
 ## Parts of Speech Used in a Model
 
@@ -50,4 +50,4 @@ There was also little difference between these two models regarding clustering. 
 
 ### Information Retrieval
 
-Finally, for the first two information retrieval tasks `r_model` and `n_model` achieved similar average similarity scores. Only on the third task was there a significant difference with `r_model` achieving a similarity score of 91% and `n_model` achieving a similarity score of 83.1%. In each case, however, the models returned relevant documents.
+Finally, for the first two information retrieval tasks `r_model` and `n_model` achieved similar similarity scores. Only on the third task was there a significant difference with `r_model` achieving higher similarity scores and `n_model` achieving lower similarity scores. In each case, however, the models returned relevant documents.
