@@ -11796,7 +11796,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gensim</span> <span class="k">import</span> <span class="n">corpora</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">similarities</span>
@@ -12222,7 +12222,7 @@ corpus assigned to no topics: 14.591356439880187 %
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># build indicies for similarity quiries</span>
@@ -12246,9 +12246,6 @@ corpus assigned to no topics: 14.591356439880187 %
         <span class="n">title</span> <span class="o">=</span> <span class="n">article_dict</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
         <span class="n">year</span> <span class="o">=</span> <span class="n">article_dict</span><span class="p">[</span><span class="s1">&#39;pub_year&#39;</span><span class="p">]</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s1">&#39;: &#39;</span> <span class="o">+</span> <span class="n">author</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; (&#39;</span> <span class="o">+</span> <span class="n">year</span> <span class="o">+</span> <span class="s1">&#39;). &#39;</span> <span class="o">+</span> <span class="n">title</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n\t</span><span class="s1">similarity score -&gt; &#39;</span> <span class="o">+</span> <span class="n">score</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-    <span class="n">average_score</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*********************************&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average similarity score -&gt;&quot;</span><span class="p">,</span> <span class="n">average_score</span><span class="p">)</span>
 
 <span class="c1"># set up nlp for new docs</span>
 <span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
@@ -12313,7 +12310,7 @@ corpus assigned to no topics: 14.591356439880187 %
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">retrieval_test</span><span class="p">(</span><span class="n">r_dictionary</span><span class="p">,</span> <span class="n">r_greene</span><span class="p">,</span> <span class="n">r_model</span><span class="p">,</span> <span class="n">r_index</span><span class="p">)</span>
@@ -12363,8 +12360,6 @@ doc_7250: Allen, Leslie C. (1998). Review Of The Structure Of Psalms 93-100
 doc_7539: Ceresko, Anthony R. (1995). Review Of  Voyez De Vos Yeux: Étude Structurelle De Vingt Psaumes, Dont Le Psaume 119 
 	similarity score -&gt; 0.8418440818786621
 
-*********************************
-Average similarity score -&gt; 0.8718638241291046
 </pre>
 </div>
 </div>
@@ -12383,7 +12378,7 @@ Average similarity score -&gt; 0.8718638241291046
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">retrieval_test</span><span class="p">(</span><span class="n">n_dictionary</span><span class="p">,</span> <span class="n">n_greene</span><span class="p">,</span> <span class="n">n_model</span><span class="p">,</span> <span class="n">n_index</span><span class="p">)</span>
@@ -12433,8 +12428,6 @@ doc_2970: Liebreich, Leon J. (1955). The Songs Of Ascents And The Priestly Bless
 doc_5418: Buss, Martin J. (1963). The Psalms Of Asaph And Korah
 	similarity score -&gt; 0.8536018133163452
 
-*********************************
-Average similarity score -&gt; 0.8777481973171234
 </pre>
 </div>
 </div>
@@ -12447,12 +12440,7 @@ Average similarity score -&gt; 0.8777481973171234
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Brief-Discussion:-Finding-articles-similar-to-Greene,-N.-E.-(2017).-Creation,-destruction,-and-a-Psalmist's-plea:-rethinking-the-poetic-structure-of-Psalm-74.">Brief Discussion: Finding articles similar to Greene, N. E. (2017). Creation, destruction, and a Psalmist's plea: rethinking the poetic structure of Psalm 74.<a class="anchor-link" href="#Brief-Discussion:-Finding-articles-similar-to-Greene,-N.-E.-(2017).-Creation,-destruction,-and-a-Psalmist's-plea:-rethinking-the-poetic-structure-of-Psalm-74.">&#182;</a></h2><p>The average similarity score for the top ten results for the first information retrieval task as are follows:</p>
-<ul>
-<li><code>r_model</code>: average similarity score -&gt; 87.1%</li>
-<li><code>n_model</code>: average similarity score -&gt; 87.7%</li>
-</ul>
-<p>Each model returned documents about the Psalms which is appropriate given the query article, and each model had a similar and high average similarity score. However, each model returned a different set of results without any documents in common.</p>
+<h2 id="Brief-Discussion:-Finding-articles-similar-to-Greene,-N.-E.-(2017).-Creation,-destruction,-and-a-Psalmist's-plea:-rethinking-the-poetic-structure-of-Psalm-74.">Brief Discussion: Finding articles similar to Greene, N. E. (2017). Creation, destruction, and a Psalmist's plea: rethinking the poetic structure of Psalm 74.<a class="anchor-link" href="#Brief-Discussion:-Finding-articles-similar-to-Greene,-N.-E.-(2017).-Creation,-destruction,-and-a-Psalmist's-plea:-rethinking-the-poetic-structure-of-Psalm-74.">&#182;</a></h2><p>Each model returned documents about the Psalms which is appropriate given the query article, and each model had similar similarity scored. However, each model returned a different set of results without any documents in common.</p>
 
 </div>
 </div>
@@ -12475,7 +12463,7 @@ Average similarity score -&gt; 0.8777481973171234
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">retrieval_test</span><span class="p">(</span><span class="n">r_dictionary</span><span class="p">,</span> <span class="n">r_hollenback</span><span class="p">,</span> <span class="n">r_model</span><span class="p">,</span> <span class="n">r_index</span><span class="p">)</span>
@@ -12525,8 +12513,6 @@ doc_8946: Mclay, Tim (2000). Review Of The Oracle Of Tyre: The Septuagint Of Isa
 doc_5894: Macdonald, John (1980). Review Of  Untersuchungen Zum Begriff &lt;Rle&gt;וצר&lt;Pdf&gt; Im Alten Testament 
 	similarity score -&gt; 0.6873050928115845
 
-*********************************
-Average similarity score -&gt; 0.7312598764896393
 </pre>
 </div>
 </div>
@@ -12545,7 +12531,7 @@ Average similarity score -&gt; 0.7312598764896393
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">retrieval_test</span><span class="p">(</span><span class="n">n_dictionary</span><span class="p">,</span> <span class="n">n_hollenback</span><span class="p">,</span> <span class="n">n_model</span><span class="p">,</span> <span class="n">n_index</span><span class="p">)</span>
@@ -12595,8 +12581,6 @@ doc_6994: Corley, Kathleen E. (1996). Review Of The Double Message: Patterns Of 
 doc_8757: Walsh, Jerome T. (2001). Leviticus 18:22 And 20:13: Who Is Doing What To Whom?
 	similarity score -&gt; 0.6825031638145447
 
-*********************************
-Average similarity score -&gt; 0.727079838514328
 </pre>
 </div>
 </div>
@@ -12609,12 +12593,7 @@ Average similarity score -&gt; 0.727079838514328
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Brief-Discussion:-Finding-articles-similar-to-Hollenback,-G.-M.-(2017).-Who-is-doing-what-to-whom-revisited:-Another-Look-at-Leviticus-18:22-and-20:13.">Brief Discussion: Finding articles similar to Hollenback, G. M. (2017). Who is doing what to whom revisited: Another Look at Leviticus 18:22 and 20:13.<a class="anchor-link" href="#Brief-Discussion:-Finding-articles-similar-to-Hollenback,-G.-M.-(2017).-Who-is-doing-what-to-whom-revisited:-Another-Look-at-Leviticus-18:22-and-20:13.">&#182;</a></h2><p>The average similarity score for the top ten results for the second information retrieval task as are follows:</p>
-<ul>
-<li><code>r_model</code>: average similarity score -&gt; 73.1%</li>
-<li><code>n_model</code>: average similarity score -&gt; 72.7%</li>
-</ul>
-<p>Each model returned documents which focus on gender, especially on women's roles in various biblical contexts, and each model had a similar average similarity score. There were two documents from the corpus which were returned by each model:</p>
+<h2 id="Brief-Discussion:-Finding-articles-similar-to-Hollenback,-G.-M.-(2017).-Who-is-doing-what-to-whom-revisited:-Another-Look-at-Leviticus-18:22-and-20:13.">Brief Discussion: Finding articles similar to Hollenback, G. M. (2017). Who is doing what to whom revisited: Another Look at Leviticus 18:22 and 20:13.<a class="anchor-link" href="#Brief-Discussion:-Finding-articles-similar-to-Hollenback,-G.-M.-(2017).-Who-is-doing-what-to-whom-revisited:-Another-Look-at-Leviticus-18:22-and-20:13.">&#182;</a></h2><p>Each model returned documents which focus on gender, especially on women's roles in various biblical contexts, and each model had similar  similarity scores. There were two documents from the corpus which were returned by each model:</p>
 <ul>
 <li>doc_8757: Walsh, Jerome T. (2001). Leviticus 18:22 And 20:13: Who Is Doing What To Whom?</li>
 <li>doc_1974: Trible, Phyllis (1987). Review Of The Israelite Woman: Social Role And Literary Type In Biblical Narrative</li>
@@ -12642,7 +12621,7 @@ Average similarity score -&gt; 0.727079838514328
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">retrieval_test</span><span class="p">(</span><span class="n">r_dictionary</span><span class="p">,</span> <span class="n">r_dinkler</span><span class="p">,</span> <span class="n">r_model</span><span class="p">,</span> <span class="n">r_index</span><span class="p">)</span>
@@ -12692,8 +12671,6 @@ doc_5910: Beardslee, William A. (1980). Review Of Structural Exegesis: From Theo
 doc_7430: Dean, Margaret E. (1996). Review Of God-With-Us: The Dominant Perspective In Matthew&#39;S Story And Other Essays
 	similarity score -&gt; 0.8948432207107544
 
-*********************************
-Average similarity score -&gt; 0.9102906227111817
 </pre>
 </div>
 </div>
@@ -12712,7 +12689,7 @@ Average similarity score -&gt; 0.9102906227111817
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">retrieval_test</span><span class="p">(</span><span class="n">n_dictionary</span><span class="p">,</span> <span class="n">n_dinkler</span><span class="p">,</span> <span class="n">n_model</span><span class="p">,</span> <span class="n">n_index</span><span class="p">)</span>
@@ -12762,8 +12739,6 @@ doc_312: Sylva, Dennis (2006). Review Of Dialogue And Drama: Elements Of Greek T
 doc_3857: Robbins, Vernon K. (1973). The Healing Of Blind Bartimaeus (10:46-52) In The Marcan Theology
 	similarity score -&gt; 0.7885808348655701
 
-*********************************
-Average similarity score -&gt; 0.8319473385810852
 </pre>
 </div>
 </div>
@@ -12776,22 +12751,7 @@ Average similarity score -&gt; 0.8319473385810852
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Brief-Discussion:-Finding-Articles-Similar-to-Dinkler,-M.-B.-(2017).-Building-character-on-the-road-to-Emmaus:-Lukan-characterization-in-contemporary-literary-perspective.">Brief Discussion: Finding Articles Similar to Dinkler, M. B. (2017). Building character on the road to Emmaus: Lukan characterization in contemporary literary perspective.<a class="anchor-link" href="#Brief-Discussion:-Finding-Articles-Similar-to-Dinkler,-M.-B.-(2017).-Building-character-on-the-road-to-Emmaus:-Lukan-characterization-in-contemporary-literary-perspective.">&#182;</a></h2><p>The average similarity score for the top ten results for the third information retrieval task as are follows:</p>
-<ul>
-<li><code>r_model</code>: average similarity score -&gt; 91.0%</li>
-<li><code>n_model</code>: average similarity score -&gt; 83.1%</li>
-</ul>
-<p>Each model returned documents related to gospel studies which is appropirate given the query article. <code>r_model</code> had a higher average similarity score than did <code>n_model</code>. Each model returned a unique list of results with no documents in common.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Summary-Discussion">Summary Discussion<a class="anchor-link" href="#Summary-Discussion">&#182;</a></h1><p>Building a topic model on a noun-only corpus as opposed to a corpus with all parts of speech has a negligible effect on topic coherence, clustering, and information retrieval. <code>r_model</code> and <code>n_model</code> each contained 76% coherent topics, furthermore, most of those topics were nearly identical in their top ten most prominent words. There was also little difference between these two models regarding clustering. <code>r_model</code> assigned 58.7% of the corpus to one topic, 26.6% of the corpus to multiple topics, leaving 15.1% of the corpus unassigned. <code>n_model</code> assigned 55.2% of the corpus to one topic, 30.1% of the corpus to multiple topics, leaving 14.5% of the corpus unassigned. Finally, for the first two information retrieval tasks <code>r_model</code> and <code>n_model</code> achieved similar average similarity scores. Only on the third task was there a significant difference with <code>r_model</code> achieving a similarity score of 91% and <code>n_model</code> achieving a similarity score of 83.1%. In each case, however, the models returned relevant documents.</p>
-<p>There may be a few reasons that there was not a significant difference between the properties of these models. First, each model was was lemmatized and had stop words removed. This step may be more significant for preparing a corpus for modeling than filtering out non-nouns. Second, the nouns used in a scholarly article are more indicative of its content than are other parts of speech, especially adjectives, adverbs, and prepositions. An investigation of <code>r_model</code> shows that nouns tend to be the most dominant words in a given topic. Filtering out non-nouns has less of an effect as one might assume. Finally, an investigation of <code>n_model</code> shows that it does contain a number of instances of non-nouns. The <code>SpaCy</code> library used in corpus processing did not recognize and filter out all non-nouns.</p>
+<h2 id="Brief-Discussion:-Finding-Articles-Similar-to-Dinkler,-M.-B.-(2017).-Building-character-on-the-road-to-Emmaus:-Lukan-characterization-in-contemporary-literary-perspective.">Brief Discussion: Finding Articles Similar to Dinkler, M. B. (2017). Building character on the road to Emmaus: Lukan characterization in contemporary literary perspective.<a class="anchor-link" href="#Brief-Discussion:-Finding-Articles-Similar-to-Dinkler,-M.-B.-(2017).-Building-character-on-the-road-to-Emmaus:-Lukan-characterization-in-contemporary-literary-perspective.">&#182;</a></h2><p>Each model returned documents related to gospel studies which is appropirate given the query article. <code>r_model</code> had higher similarity scores than did <code>n_model</code>. Each model returned a unique list of results with no documents in common.</p>
 
 </div>
 </div>
